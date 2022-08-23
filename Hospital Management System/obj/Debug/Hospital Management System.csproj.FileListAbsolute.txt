@@ -1,0 +1,33 @@
+D:\C# Programming\C# Code\0AAAA C# Project\Normal\Hospital Management System_sn\Hospital Management System\bin\Debug\Hospital Management System.exe.config
+D:\C# Programming\C# Code\0AAAA C# Project\Normal\Hospital Management System_sn\Hospital Management System\bin\Debug\Hospital Management System.exe
+D:\C# Programming\C# Code\0AAAA C# Project\Normal\Hospital Management System_sn\Hospital Management System\bin\Debug\Hospital Management System.pdb
+D:\C# Programming\C# Code\0AAAA C# Project\Normal\Hospital Management System_sn\Hospital Management System\obj\Debug\Hospital Management System.csproj.AssemblyReference.cache
+D:\C# Programming\C# Code\0AAAA C# Project\Normal\Hospital Management System_sn\Hospital Management System\obj\Debug\Hospital Management System.csproj.SuggestedBindingRedirects.cache
+D:\C# Programming\C# Code\0AAAA C# Project\Normal\Hospital Management System_sn\Hospital Management System\obj\Debug\Hospital_Management_System.Properties.Resources.resources
+D:\C# Programming\C# Code\0AAAA C# Project\Normal\Hospital Management System_sn\Hospital Management System\obj\Debug\Hospital_Management_System.View_Layer.About_us.resources
+D:\C# Programming\C# Code\0AAAA C# Project\Normal\Hospital Management System_sn\Hospital Management System\obj\Debug\Hospital_Management_System.View_Layer.Change_Password.resources
+D:\C# Programming\C# Code\0AAAA C# Project\Normal\Hospital Management System_sn\Hospital Management System\obj\Debug\Hospital_Management_System.View_Layer.DoctorManage.resources
+D:\C# Programming\C# Code\0AAAA C# Project\Normal\Hospital Management System_sn\Hospital Management System\obj\Debug\Hospital_Management_System.View_Layer.Doctor_Department.resources
+D:\C# Programming\C# Code\0AAAA C# Project\Normal\Hospital Management System_sn\Hospital Management System\obj\Debug\Hospital_Management_System.View_Layer.Doctor_Manage_Room.resources
+D:\C# Programming\C# Code\0AAAA C# Project\Normal\Hospital Management System_sn\Hospital Management System\obj\Debug\Hospital_Management_System.View_Layer.Doctor_Menu_Form.resources
+D:\C# Programming\C# Code\0AAAA C# Project\Normal\Hospital Management System_sn\Hospital Management System\obj\Debug\Hospital_Management_System.View_Layer.Login_Form.resources
+D:\C# Programming\C# Code\0AAAA C# Project\Normal\Hospital Management System_sn\Hospital Management System\obj\Debug\Hospital_Management_System.View_Layer.Manage_Bill_Payment.resources
+D:\C# Programming\C# Code\0AAAA C# Project\Normal\Hospital Management System_sn\Hospital Management System\obj\Debug\Hospital_Management_System.View_Layer.Manage_Department.resources
+D:\C# Programming\C# Code\0AAAA C# Project\Normal\Hospital Management System_sn\Hospital Management System\obj\Debug\Hospital_Management_System.View_Layer.Manage_Doctors.resources
+D:\C# Programming\C# Code\0AAAA C# Project\Normal\Hospital Management System_sn\Hospital Management System\obj\Debug\Hospital_Management_System.View_Layer.Admin_Menu_Form.resources
+D:\C# Programming\C# Code\0AAAA C# Project\Normal\Hospital Management System_sn\Hospital Management System\obj\Debug\Hospital_Management_System.View_Layer.Manage_Patients.resources
+D:\C# Programming\C# Code\0AAAA C# Project\Normal\Hospital Management System_sn\Hospital Management System\obj\Debug\Hospital_Management_System.View_Layer.Manage_Room.resources
+D:\C# Programming\C# Code\0AAAA C# Project\Normal\Hospital Management System_sn\Hospital Management System\obj\Debug\Hospital_Management_System.View_Layer.Manage_Test.resources
+D:\C# Programming\C# Code\0AAAA C# Project\Normal\Hospital Management System_sn\Hospital Management System\obj\Debug\Hospital_Management_System.View_Layer.PatientRoom.resources
+D:\C# Programming\C# Code\0AAAA C# Project\Normal\Hospital Management System_sn\Hospital Management System\obj\Debug\Hospital_Management_System.View_Layer.PatientsManage.resources
+D:\C# Programming\C# Code\0AAAA C# Project\Normal\Hospital Management System_sn\Hospital Management System\obj\Debug\Hospital_Management_System.View_Layer.Patient_Menu_Form.resources
+D:\C# Programming\C# Code\0AAAA C# Project\Normal\Hospital Management System_sn\Hospital Management System\obj\Debug\Hospital_Management_System.View_Layer.Read_Prescription.resources
+D:\C# Programming\C# Code\0AAAA C# Project\Normal\Hospital Management System_sn\Hospital Management System\obj\Debug\Hospital_Management_System.View_Layer.Registration_Form.resources
+D:\C# Programming\C# Code\0AAAA C# Project\Normal\Hospital Management System_sn\Hospital Management System\obj\Debug\Hospital_Management_System.View_Layer.SeeTest.resources
+D:\C# Programming\C# Code\0AAAA C# Project\Normal\Hospital Management System_sn\Hospital Management System\obj\Debug\Hospital_Management_System.View_Layer.TestManage.resources
+D:\C# Programming\C# Code\0AAAA C# Project\Normal\Hospital Management System_sn\Hospital Management System\obj\Debug\Hospital_Management_System.View_Layer.Welcome_Form.resources
+D:\C# Programming\C# Code\0AAAA C# Project\Normal\Hospital Management System_sn\Hospital Management System\obj\Debug\Hospital_Management_System.View_Layer.Write_Prescription.resources
+D:\C# Programming\C# Code\0AAAA C# Project\Normal\Hospital Management System_sn\Hospital Management System\obj\Debug\Hospital Management System.csproj.GenerateResource.cache
+D:\C# Programming\C# Code\0AAAA C# Project\Normal\Hospital Management System_sn\Hospital Management System\obj\Debug\Hospital Management System.csproj.CoreCompileInputs.cache
+D:\C# Programming\C# Code\0AAAA C# Project\Normal\Hospital Management System_sn\Hospital Management System\obj\Debug\Hospital Management System.exe
+D:\C# Programming\C# Code\0AAAA C# Project\Normal\Hospital Management System_sn\Hospital Management System\obj\Debug\Hospital Management System.pdb

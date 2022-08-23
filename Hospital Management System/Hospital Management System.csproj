@@ -1,0 +1,498 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{881EB3E7-64ED-499F-AB56-754F31B9CDA6}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Hospital_Management_System</RootNamespace>
+    <AssemblyName>Hospital Management System</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime, Version=4.1.1.1, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.4.3.1\lib\net462\System.Runtime.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UIAutomationProvider" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="WindowsFormsIntegration" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="HCMSDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HCMSDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="HCMSDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HCMSDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="User Data Access\AdminDataAccess.cs" />
+    <Compile Include="User Data Access\AppoinmentDataAccess.cs" />
+    <Compile Include="User Data Access\DataAccess.cs" />
+    <Compile Include="User Data Access\DepartmentDataAccess.cs" />
+    <Compile Include="User Data Access\DoctorDataAccess.cs" />
+    <Compile Include="User Data Access\PatientDataAccess.cs" />
+    <Compile Include="User Data Access\PaymentDataAccess.cs" />
+    <Compile Include="User Data Access\PrescriptionDataAccess.cs" />
+    <Compile Include="User Data Access\RoomDataAccess.cs" />
+    <Compile Include="User Data Access\TestDataAccess.cs" />
+    <Compile Include="User Data Access\UserDataAccess.cs" />
+    <Compile Include="Users\Admin.cs" />
+    <Compile Include="Users\Appointment.cs" />
+    <Compile Include="Users\Bill_Payment.cs" />
+    <Compile Include="Users\Department.cs" />
+    <Compile Include="Users\Doctor.cs" />
+    <Compile Include="Users\Patient.cs" />
+    <Compile Include="Users\Prescription.cs" />
+    <Compile Include="Users\Room.cs" />
+    <Compile Include="Users\Test.cs" />
+    <Compile Include="Users\User.cs" />
+    <Compile Include="View Layer\About_us.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View Layer\About_us.Designer.cs">
+      <DependentUpon>About_us.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View Layer\Change_Password.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View Layer\Change_Password.Designer.cs">
+      <DependentUpon>Change_Password.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View Layer\DoctorManage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View Layer\DoctorManage.Designer.cs">
+      <DependentUpon>DoctorManage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View Layer\Doctor_Department.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View Layer\Doctor_Department.Designer.cs">
+      <DependentUpon>Doctor_Department.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View Layer\Doctor_Manage_Room.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View Layer\Doctor_Manage_Room.Designer.cs">
+      <DependentUpon>Doctor_Manage_Room.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View Layer\Doctor_Menu_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View Layer\Doctor_Menu_Form.Designer.cs">
+      <DependentUpon>Doctor_Menu_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View Layer\Login_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View Layer\Login_Form.Designer.cs">
+      <DependentUpon>Login_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View Layer\Manage_Bill_Payment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View Layer\Manage_Bill_Payment.Designer.cs">
+      <DependentUpon>Manage_Bill_Payment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View Layer\Manage_Department.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View Layer\Manage_Department.Designer.cs">
+      <DependentUpon>Manage_Department.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View Layer\Manage_Doctors.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View Layer\Manage_Doctors.Designer.cs">
+      <DependentUpon>Manage_Doctors.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View Layer\Admin_Menu_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View Layer\Admin_Menu_Form.Designer.cs">
+      <DependentUpon>Admin_Menu_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View Layer\Manage_Patients.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View Layer\Manage_Patients.Designer.cs">
+      <DependentUpon>Manage_Patients.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View Layer\Manage_Room.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View Layer\Manage_Room.Designer.cs">
+      <DependentUpon>Manage_Room.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View Layer\Manage_Test.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View Layer\Manage_Test.Designer.cs">
+      <DependentUpon>Manage_Test.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View Layer\PatientRoom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View Layer\PatientRoom.Designer.cs">
+      <DependentUpon>PatientRoom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View Layer\PatientsManage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View Layer\PatientsManage.Designer.cs">
+      <DependentUpon>PatientsManage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View Layer\Patient_Menu_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View Layer\Patient_Menu_Form.Designer.cs">
+      <DependentUpon>Patient_Menu_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View Layer\Read_Prescription.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View Layer\Read_Prescription.Designer.cs">
+      <DependentUpon>Read_Prescription.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View Layer\Registration_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View Layer\Registration_Form.Designer.cs">
+      <DependentUpon>Registration_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View Layer\SeeTest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View Layer\SeeTest.Designer.cs">
+      <DependentUpon>SeeTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View Layer\TestManage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View Layer\TestManage.Designer.cs">
+      <DependentUpon>TestManage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View Layer\Welcome_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View Layer\Welcome_Form.Designer.cs">
+      <DependentUpon>Welcome_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View Layer\Write_Prescription.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View Layer\Write_Prescription.Designer.cs">
+      <DependentUpon>Write_Prescription.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="View Layer\About_us.resx">
+      <DependentUpon>About_us.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View Layer\Change_Password.resx">
+      <DependentUpon>Change_Password.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View Layer\DoctorManage.resx">
+      <DependentUpon>DoctorManage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View Layer\Doctor_Department.resx">
+      <DependentUpon>Doctor_Department.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View Layer\Doctor_Manage_Room.resx">
+      <DependentUpon>Doctor_Manage_Room.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View Layer\Doctor_Menu_Form.resx">
+      <DependentUpon>Doctor_Menu_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View Layer\Login_Form.resx">
+      <DependentUpon>Login_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View Layer\Manage_Bill_Payment.resx">
+      <DependentUpon>Manage_Bill_Payment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View Layer\Manage_Department.resx">
+      <DependentUpon>Manage_Department.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View Layer\Manage_Doctors.resx">
+      <DependentUpon>Manage_Doctors.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View Layer\Admin_Menu_Form.resx">
+      <DependentUpon>Admin_Menu_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View Layer\Manage_Patients.resx">
+      <DependentUpon>Manage_Patients.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View Layer\Manage_Room.resx">
+      <DependentUpon>Manage_Room.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View Layer\Manage_Test.resx">
+      <DependentUpon>Manage_Test.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View Layer\PatientRoom.resx">
+      <DependentUpon>PatientRoom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View Layer\PatientsManage.resx">
+      <DependentUpon>PatientsManage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View Layer\Patient_Menu_Form.resx">
+      <DependentUpon>Patient_Menu_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View Layer\Read_Prescription.resx">
+      <DependentUpon>Read_Prescription.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View Layer\Registration_Form.resx">
+      <DependentUpon>Registration_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View Layer\SeeTest.resx">
+      <DependentUpon>SeeTest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View Layer\TestManage.resx">
+      <DependentUpon>TestManage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View Layer\Welcome_Form.resx">
+      <DependentUpon>Welcome_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View Layer\Write_Prescription.resx">
+      <DependentUpon>Write_Prescription.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="HCMSDataSet.xsc">
+      <DependentUpon>HCMSDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="HCMSDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>HCMSDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="HCMSDataSet.xss">
+      <DependentUpon>HCMSDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="HCMSDataSet1.xsc">
+      <DependentUpon>HCMSDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="HCMSDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>HCMSDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="HCMSDataSet1.xss">
+      <DependentUpon>HCMSDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\DataSources\Hospital_Management_System.Users.Department.datasource" />
+    <None Include="Properties\DataSources\Hospital_Management_System.User_Data_Access.DepartmentDataAccess.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\building_care_clinic_health_hospital_icon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.8">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.8 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\admin_avatar_human_login_user_icon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lock_login_manager_private_register_icon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OBUZORLdEFO3HofPcHMa-1024x654.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HMS.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hospital-Software_feature.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\downloading_download_folder_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Exit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\female_help_service_support_technical_icon%2832p%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\report_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\save%2832p%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrows_back_direction_icon%2832p%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image1.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user_account_person_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\person_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\userphoto_account_person_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dashboard_menu_icon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\doctor_healthicon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\doctor_icon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\doctor_health_hospital_man_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Patient_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Nurse_people_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\about us_icon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nurse_people_icon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\illness_patient_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\department_organization chart_tree_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\list_listing_icon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow_back_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow_back_undo_left_navigation_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow_back_undo_left_navigation_icon %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow_back_left_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close_user_settings_icon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bill_card_credit_expenditure_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bill_card_credit_expenditure_icon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\prescription_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimize_reduce_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cancel_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\test_results_research_analysis_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\note_icon.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
